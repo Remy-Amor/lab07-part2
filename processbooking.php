@@ -12,52 +12,52 @@
      <h1>Rohirrim Tour Booking Confirmation</h1>
      <?php
           if ($_SERVER["REQUEST_METHOD"] == "POST") {
-               if (isset($firstname)) {
+               if (isset($_POST["firstname"])) {
                     $firstname = clean_input($_POST["firstname"]);
                     echo "<h2>first name is ", $firstname, "</h2></br>";
                }
 
-               if (isset($lastname)) {
+               if (isset($_POST["lastname"])) {
                     $lastname = clean_input($_POST["lastname"]);
                     echo "<h2>last name is ", $lastname, "</h2></br>";
                }
 
-               if (isset($age)) {
+               if (isset($_POST["age"])) {
                     $age = clean_input($_POST["age"]);
                     echo "<h2>age is ", $age, "</h2></br>";
                }
 
-               if (isset($species)) {
+               if (isset($_POST["species"])) {
                     $species = clean_input($_POST["species"]);
                     echo "<h2>species is ", $species, "</h2></br>";
                }
 
-               if (isset($accom)) {
+               if (isset($_POST["accom"])) {
                     $accom = clean_input($_POST["accom"]);
                     echo "<h2>you have selected accomodation</h2></br>";
                }
 
-               if (isset($fourday)) {
+               if (isset($_POST["4day"])) {
                     $fourday = clean_input($_POST["4day"]);
                     echo "<h2>you have selected a four day tour</h2></br>";
                }
 
-               if (isset($tenday)) {
+               if (isset($_POST["10day"])) {
                     $tenday = clean_input($_POST["10day"]);
                     echo "<h2>you have selected a ten day tour</h2></br>";
                }
 
-               if (isset($food)) {
+               if (isset($_POST["food"])) {
                     $food = clean_input($_POST["food"]);
                     echo "<h2>your menu preference is ",$food,"</h2></br>";
                }
 
-               if (isset($bookday)) {
+               if (isset($_POST["bookday"])) {
                     $bookday = clean_input($_POST["bookday"]);
                     echo "<h2>date of booking is ",$bookday,"</h2></br>";
                }
 
-               if (isset($partysize)) {
+               if (isset($_POST["partysize"])) {
                     $partysize = clean_input($_POST["partysize"]);
                     echo "<h2>party size is ",$partysize,"</h2></br>";
                }
